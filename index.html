@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certifica Fácil | Artes parcerias</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div>
+        <h1>Gerar arte</h1>
+
+        <div>
+            <label for="arte">Arte</label>
+            <select name="arte" id="arte"></select>
+        </div>
+
+        <div>
+            <label for="cliente">Nome do cliente</label>
+            <input id="cliente" type="text" name="cliente" placeholder="Empresa"/>
+        </div>
+
+        <div>
+            <label for="genero">Gênero</label>
+            <select name="genero" id="genero">
+                <option value="f">Feminino (da)</option>
+                <option value="m">Masculino (do)</option>
+            </select>
+        </div>        
+
+        <button onclick="generate()">Gerar</button>
+    </div>
+
+    <canvas style="display: none;"></canvas>
+
+    <script type="text/javascript" src="https://unpkg.com/canvg@3.0.4/lib/umd.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
