@@ -22,7 +22,7 @@ artes.forEach(a => {
 })
 
 function generate() {
-    const cliente = clienteElement.value
+    const cliente = clienteElement.value || "Empresa"
     const genero = generoElement.value === "f" ? "da" : "do"
     const arteName = arteElement.value
     const arte = artes.find((a) => a.name === arteName)
